@@ -11,7 +11,7 @@
         margin-left: auto;
         margin-right: auto;
         .#{$name}_contents {
-            display: flex;
+            display: flex; // could be block
             .content_position {
                 display: flex;
                 background-color: $dark_col;
