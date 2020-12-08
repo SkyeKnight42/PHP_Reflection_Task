@@ -1,0 +1,205 @@
+@import "../_variables.scss";
+
+@media (min-width: 750px) {
+
+    .contact_top {
+        padding-top: 110px;
+
+        .home_link {
+            padding-left: 20px;
+            width: 970px;
+            margin: 0 auto;
+            display: block;
+            height: 40px;
+
+            a:first-of-type {
+                font-weight: 600;
+            }
+
+            a, p {
+                display: inline-block;
+                color: $navigation-back;
+                font-size: 14px;
+                padding: 0;
+                margin: 0;
+                line-height: 40px;
+            }
+        }
+
+        .contact_help {
+            h3 {
+                // padding-left: 20px;
+                width: 750px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .contact_form {
+        // padding-top: 110px;
+        width: 750px;
+        
+        .contact_info {
+            width: 750px;
+            // padding: 20px 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form_privacy {
+            width: 750px;
+            // padding: 20px 0;
+            margin-left: auto;
+            margin-right: auto;
+            .send_button {
+                margin-left: 25px;
+            }
+
+            form {
+                .invalid {
+                    border: solid 1px red;
+                }
+
+                .success {
+                    width: 760px;
+                }
+            }
+        }
+
+        .map_container {
+            width: 750px;
+            flex-direction: row;
+            justify-content: space-between;
+            // padding: 20px 0;
+            margin: 25px auto;
+
+            .card {
+                display: inline-block;
+                padding: 0 0;
+                margin: 0 0;
+                width: 350px;
+            }
+            .card:first-of-type {
+                .card_top {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 975px) {
+
+    .contact_top {
+        padding-top: 210px;
+
+        .contact_help {
+
+            h3 {
+                width: 970px;
+            }
+        }
+    }
+    
+    .contact_form {
+        
+        width: 970px;
+        .contact_info {
+            width: 970px; 
+        }
+
+        .form_privacy {
+            width: 970px;
+            form {
+                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                span {
+                    display: block;
+                    width: 48%;
+                }
+                .message_container,
+                #privacy {
+                    width: 100%;
+                }
+
+                #privacy {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                }
+
+                & > a {
+                    display: block;
+                    width: auto;
+                    
+                }
+            }
+        }
+
+        .map_container {
+            width: 970px;
+            .card {
+                width: 450px;
+            }
+            .card:first-of-type {
+                .card_top {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1260px) {
+
+    .contact_top {
+
+        .home_link {
+            width: 1200px;
+        }
+
+        .contact_help {
+
+            background-color: white;
+            h3 {
+                color: $navigation-back;
+                width: 1200px;
+            }
+        }
+    }
+
+    .contact_form {
+
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .contact_info {
+            padding: 0 15px;
+            width: 400px;
+        }
+
+        .form_privacy {
+            order: -1;
+            width: 800px;
+        }
+
+        .map_container {
+            width: 1200px;
+            justify-content: space-between;
+            .card {
+                width: 550px;
+
+                .card_top {
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -352,6 +352,10 @@
   background-color: white;
 }
 
+.news_info_web {
+  display: block;
+}
+
 .news_info_web .card_image_container .tab_boundaries .tab_link {
   background-color: #926fb1;
 }
@@ -383,6 +387,10 @@
 
 .header_button .web_icon {
   color: #926fb1;
+}
+
+.news_info_it {
+  display: block;
 }
 
 .news_info_it .card_image_container .tab_boundaries .tab_link {
@@ -418,6 +426,10 @@
   color: #4183d7;
 }
 
+.news_info_telecoms {
+  display: block;
+}
+
 .news_info_telecoms .card_image_container .tab_boundaries .tab_link {
   background-color: #d64541;
 }
@@ -449,6 +461,10 @@
 
 .header_button .telecoms_icon {
   color: #d64541;
+}
+
+.news_info_bespoke {
+  display: block;
 }
 
 .news_info_bespoke .card_image_container .tab_boundaries .tab_link {
@@ -484,6 +500,10 @@
   color: #67809f;
 }
 
+.news_info_digital {
+  display: block;
+}
+
 .news_info_digital .card_image_container .tab_boundaries .tab_link {
   background-color: #2eec71;
 }
@@ -515,6 +535,10 @@
 
 .header_button .digital_icon {
   color: #2eec71;
+}
+
+.news_info_cybers {
+  display: block;
 }
 
 .news_info_cybers .card_image_container .tab_boundaries .tab_link {

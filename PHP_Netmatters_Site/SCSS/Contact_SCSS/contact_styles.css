@@ -1,0 +1,526 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact_top {
+  padding-top: 168px;
+  width: 100%;
+}
+
+.contact_top .home_link {
+  display: none;
+}
+
+.contact_top .contact_help {
+  background-color: #333645;
+  color: white;
+  padding: 26px 0 26px 20px;
+}
+
+.contact_top .contact_help h3 {
+  text-transform: capitalize;
+  font-size: 38px;
+  line-height: 38px;
+}
+
+.contact_form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact_form .contact_info {
+  padding: 20px 15px;
+}
+
+.contact_form .contact_info .text, .contact_form .contact_info .link {
+  letter-spacing: 1px;
+  display: block;
+  font-weight: 800;
+}
+
+.contact_form .contact_info p {
+  color: #333645;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.contact_form .contact_info p:first-of-type {
+  margin-top: 0px;
+}
+
+.contact_form .contact_info a {
+  color: #926fb1;
+  font-size: 30px;
+}
+
+.contact_form .contact_info .dropdown_container {
+  margin-top: 30px;
+}
+
+.contact_form .contact_info .dropdown_container #dropdown_button p, .contact_form .contact_info .dropdown_container #dropdown_button i {
+  color: #333645;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.contact_form .contact_info .dropdown_container #dropdown_button p {
+  width: auto;
+  font-size: 16px;
+}
+
+.contact_form .contact_info .dropdown_container #dropdown_button i {
+  line-height: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contact_form .contact_info .dropdown_container #dropdown_button .active {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.contact_form .contact_info .dropdown_container #dropdown_button:hover p {
+  text-decoration: underline;
+}
+
+.contact_form .contact_info .dropdown_container .hidden {
+  height: 0px;
+  overflow: hidden;
+  border: solid 1px transparent;
+  margin-bottom: 25px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s ease;
+  transition: -webkit-transform 0.26s ease;
+  transition: transform 0.26s ease;
+  transition: transform 0.26s ease, -webkit-transform 0.26s ease;
+}
+
+.contact_form .contact_info .dropdown_container .hidden p {
+  font-weight: normal;
+}
+
+.contact_form .contact_info .dropdown_container .show_hidden {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: -webkit-transform 0.26s ease;
+  transition: -webkit-transform 0.26s ease;
+  transition: transform 0.26s ease;
+  transition: transform 0.26s ease, -webkit-transform 0.26s ease;
+  height: 100%;
+}
+
+.contact_form .form_privacy {
+  padding: 0 20px;
+}
+
+.contact_form .form_privacy form {
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.contact_form .form_privacy form input {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid 1px lightgray;
+}
+
+.contact_form .form_privacy form label {
+  display: inline-block;
+  padding: 0 0 10px;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact_form .form_privacy form p {
+  padding: 0 0 0 5px;
+  margin: 0 0;
+  display: inline-block;
+  color: red;
+}
+
+.contact_form .form_privacy form input, .contact_form .form_privacy form label {
+  color: #333645;
+  font-size: 16px;
+}
+
+.contact_form .form_privacy form #message_input {
+  resize: vertical;
+  width: 100%;
+  border-radius: 3px;
+  border: solid 1px lightgrey;
+}
+
+.contact_form .form_privacy form #privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 25px 0;
+}
+
+.contact_form .form_privacy form #privacy input {
+  height: 50px;
+  width: 50px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 0 25px;
+}
+
+.contact_form .form_privacy form #privacy label a {
+  display: inline-block;
+  font-size: 16px;
+  color: #333645;
+  text-decoration: underline;
+}
+
+.contact_form .form_privacy form .invalid {
+  border: solid 1px red;
+  outline-color: red;
+}
+
+.contact_form .form_privacy form .invalid-textarea {
+  outline-color: red;
+  border: solid 1px red !important;
+}
+
+.contact_form .form_privacy form .success {
+  color: white;
+  border-radius: 10px;
+  background-color: #3bb143;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.contact_form .form_privacy form .success .success_message {
+  color: white;
+  line-height: 60px;
+}
+
+.contact_form .form_privacy form .success i {
+  color: grey;
+  line-height: 60px;
+}
+
+.contact_form .form_privacy form .success i:hover {
+  color: darkslategrey;
+}
+
+.contact_form .form_privacy form .show_pop_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_form .form_privacy form input::-webkit-outer-spin-button,
+.contact_form .form_privacy form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact_form .form_privacy form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.contact_form .form_privacy .send_button {
+  margin-left: 40px;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #333645;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contact_form .form_privacy .send_button:hover {
+  background-color: #434550;
+  text-decoration: none;
+}
+
+.contact_form .map_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 20px;
+  margin: 50px 0 25px;
+}
+
+.contact_form .map_container .card {
+  display: inline-block;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.contact_form .map_container .card .card_top {
+  border-radius: 3px 3px 0 0;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact_form .map_container .card .card_top .logo {
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #333645;
+}
+
+.contact_form .map_container .card .card_top .logo i {
+  color: white;
+  line-height: 70px;
+  font-size: 40px;
+}
+
+.contact_form .map_container .card .card_top h5 {
+  margin-bottom: 20px;
+}
+
+.contact_form .map_container .card .card_top .line {
+  height: 3px;
+  width: 30px;
+  margin: 0 auto 20px;
+  background-color: #333645;
+}
+
+.contact_form .map_container .card .card_top p {
+  font-size: 14px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.contact_form .map_container .card .card_top:hover {
+  background-color: #926fb1;
+  color: white;
+}
+
+.contact_form .map_container .card .card_top:hover .line {
+  background-color: white;
+}
+
+.contact_form .map_container .card .map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+@media (min-width: 750px) {
+  .contact_top {
+    padding-top: 110px;
+  }
+  .contact_top .home_link {
+    padding-left: 20px;
+    width: 970px;
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+  }
+  .contact_top .home_link a:first-of-type {
+    font-weight: 600;
+  }
+  .contact_top .home_link a, .contact_top .home_link p {
+    display: inline-block;
+    color: #333645;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+  }
+  .contact_top .contact_help h3 {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .contact_form {
+    width: 750px;
+  }
+  .contact_form .contact_info {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact_form .form_privacy {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact_form .form_privacy .send_button {
+    margin-left: 25px;
+  }
+  .contact_form .form_privacy form .invalid {
+    border: solid 1px red;
+  }
+  .contact_form .form_privacy form .success {
+    width: 760px;
+  }
+  .contact_form .map_container {
+    width: 750px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 25px auto;
+  }
+  .contact_form .map_container .card {
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    width: 350px;
+  }
+  .contact_form .map_container .card:first-of-type .card_top {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 975px) {
+  .contact_top {
+    padding-top: 210px;
+  }
+  .contact_top .contact_help h3 {
+    width: 970px;
+  }
+  .contact_form {
+    width: 970px;
+  }
+  .contact_form .contact_info {
+    width: 970px;
+  }
+  .contact_form .form_privacy {
+    width: 970px;
+  }
+  .contact_form .form_privacy form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact_form .form_privacy form span {
+    display: block;
+    width: 48%;
+  }
+  .contact_form .form_privacy form .message_container,
+  .contact_form .form_privacy form #privacy {
+    width: 100%;
+  }
+  .contact_form .form_privacy form #privacy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .contact_form .form_privacy form > a {
+    display: block;
+    width: auto;
+  }
+  .contact_form .map_container {
+    width: 970px;
+  }
+  .contact_form .map_container .card {
+    width: 450px;
+  }
+  .contact_form .map_container .card:first-of-type .card_top {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .contact_top .home_link {
+    width: 1200px;
+  }
+  .contact_top .contact_help {
+    background-color: white;
+  }
+  .contact_top .contact_help h3 {
+    color: #333645;
+    width: 1200px;
+  }
+  .contact_form {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+  }
+  .contact_form .contact_info {
+    padding: 0 15px;
+    width: 400px;
+  }
+  .contact_form .form_privacy {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 800px;
+  }
+  .contact_form .map_container {
+    width: 1200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact_form .map_container .card {
+    width: 550px;
+  }
+  .contact_form .map_container .card .card_top {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=contact_styles.css.map */

@@ -23,7 +23,7 @@ searchButton.addEventListener('click', function() {
 
 window.addEventListener('resize', function() {
     if (searchState && window.innerWidth < 975 || window.innerWidth > 1260) {
-        console.log('removing classes')
+        // console.log('removing classes')
         searchInput.classList.remove('display_block')
         searchInput.classList.remove('search-fade-in')
         searchContainer.classList.remove('search_width')

@@ -1,0 +1,186 @@
+.about_links {
+  height: auto;
+  background-color: #333645;
+}
+
+.about_links .about_links_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 47px 0 43px;
+}
+
+.about_links .about_links_container .about_item {
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.about_links .about_links_container .about_item h5 {
+  font-size: 16px;
+  line-height: 17.6px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+}
+
+.about_links .about_links_container .about_item a,
+.about_links .about_links_container .about_item p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.about_links .about_links_container .about_item a {
+  color: white;
+  text-transform: capitalize;
+}
+
+.about_links .about_links_container .about_item a:hover {
+  color: white;
+  text-transform: capitalize;
+}
+
+.about_links .about_links_container .about_item .social_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_links .about_links_container .about_item .social_links div {
+  display: block;
+  width: 50%;
+  height: auto;
+  padding: 0 15px;
+}
+
+.about_links .about_links_container .about_item .social_links div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+  background-color: #20222b;
+  margin-top: 30px;
+  border: none;
+}
+
+.about_links .about_links_container .about_item .social_links div a icon {
+  padding: 10px;
+}
+
+.about_links .about_links_container .about_item .social_links div .facebook:hover {
+  background-color: #3b5998;
+}
+
+.about_links .about_links_container .about_item .social_links div .twitter:hover {
+  background-color: #00aced;
+}
+
+.about_links .about_links_container .about_item .social_links div .linkedin:hover {
+  background-color: #0077b5;
+}
+
+.about_links .about_links_container .about_item .no_change {
+  text-transform: none;
+}
+
+.sponsor {
+  display: none;
+  padding: 50px 0;
+  height: 188px;
+}
+
+.sponsor .sponsor_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 750px;
+  height: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.sponsor .sponsor_container .sponsor_box {
+  display: block;
+  height: 88px;
+  width: auto;
+}
+
+.sponsor .sponsor_container .sponsor_box img {
+  max-height: 88px;
+  width: auto;
+}
+
+.sponsor .sponsor_container .sponsor_box .coloured {
+  display: none;
+}
+
+.sponsor .sponsor_container .sponsor_box:hover .greyscale {
+  display: none;
+}
+
+.sponsor .sponsor_container .sponsor_box:hover .coloured {
+  display: block;
+}
+
+@media (min-width: 750px) {
+  .about_links .about_links_container {
+    width: 750px;
+  }
+  .about_links .about_links_container .about_item {
+    width: 375px;
+  }
+  .sponsor {
+    display: block;
+  }
+}
+
+@media (min-width: 975px) {
+  .about_links .about_links_container {
+    width: 970px;
+  }
+  .about_links .about_links_container .about_item {
+    width: 485px;
+  }
+  .sponsor {
+    height: 210px;
+  }
+  .sponsor .sponsor_container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .about_links .about_links_container {
+    width: 1200px;
+  }
+  .about_links .about_links_container .about_item {
+    width: 300px;
+  }
+  .sponsor {
+    height: 188px;
+  }
+  .sponsor .sponsor_container {
+    width: 1200px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

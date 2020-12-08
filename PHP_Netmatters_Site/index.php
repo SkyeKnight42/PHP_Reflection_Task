@@ -1,6 +1,7 @@
-<?php 
-    include 'header.php'; 
+<?php
+    include_once 'includes/database_connection.inc.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link rel="stylesheet" href="SCSS/input.css"> 
         <link rel="stylesheet" href="SCSS/pushy.css">
+        <link rel="stylesheet" href="SCSS/header.css">
+        <link rel="stylesheet" href="SCSS/footer.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.css">
@@ -18,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick-theme.css"/>
     </head>
     <body>
+        <?php include 'header.php'; ?>
 
             <div class="image_slideshow office push-this">
                 <div> <!-- Slide Image 1 -->
@@ -175,96 +179,7 @@
             </div>
             <div class="latest_width push-this"> <!-- Latest news cards -->
                 <div class="latest_column"> <!-- removed :  justify-content-center-->
-                    <div class="news_info_web first">
-                        <div class="card_image_container">
-                            <div class="tab_boundaries"> 
-                                <div class="tab_text"> 
-                                    <a class="tab_link_web tab_link" href="www.google.com">Case Studies</a>
-                                    <div class="tab_pop_out">
-                                        <p>View all: Bespoke Software / News</p>
-                                    </div>
-                                    <div class="pop_out_arrow"></div>
-                                </div>
-                            </div>
-                            <div class="card_image">
-                                <a href="#" target="_blank">
-                                    <img src="Images/News_Image_1.jpg" alt="News Image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <a class="news_title" href="#" target="_blank">Easters of Norwich Case Study</a>
-                            <p>In a digitally adopted world, e-commerce websites are leading the way in revenue generation, reach...</p>
-                            <a class="read_more_button" href="#">Read More</a>
-                            <div class="card_author">
-                                <img class="card_author_logo" src="Images/Netmatters_Logo_Small.png" alt="Netmatters Logo">
-                                <div class="card_author_content">
-                                    <strong class="card_author_name">Posted by Netmatters Ltd</strong>
-                                    <p class="card_author_date">19th June 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news_info_bespoke second">
-                        <div class="card_image_container">
-                            <div class="tab_boundaries_web tab_boundaries"> 
-                                <div class="tab_text"> 
-                                    <a class="tab_link" href="www.google.com">News</a>
-                                    <div class="tab_pop_out">
-                                        <p>View all: Bespoke Software / News</p>
-                                    </div>
-                                    <div class="pop_out_arrow"></div>
-                                </div>
-                            </div>
-                            <div class="card_image">
-                                <a href="#" target="_blank">
-                                    <img src="Images/News_Image_2.jpg" alt="News Image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <a class="news_title" href="#" target="_blank">The 6 Key Steps to Integrating Your Business...</a>
-                            <p>Systems integration is the idea that all of the software used within your business should work tog...</p>
-                            <a class="read_more_button" href="#">Read More</a>                       
-                            <div class="card_author">
-                                <img class="card_author_logo" src="Images/Netmatters_Logo_Small.png" alt="Netmatters Logo">
-                                <div class="card_author_content">
-                                    <strong class="card_author_name">Posted by Netmatters Ltd</strong>
-                                    <p class="card_author_date">16th June 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news_info_web third">
-                        <div class="card_image_container">
-                            <div class="tab_boundaries_bespoke tab_boundaries"> 
-                                <div class="tab_text"> 
-                                    <a class="tab_link" href="www.google.com">News</a>
-                                    <div class="tab_pop_out">
-                                        <p>View all: Bespoke Software / News</p>
-                                    </div>
-                                    <div class="pop_out_arrow"></div>
-                                </div>
-                            </div>
-                            <div class="card_image">
-                                <a href="#" target="_blank">
-                                    <img src="Images/News_Image_3.jpg" alt="News Image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <a class="news_title" href="#" target="_blank">Congratulations Matthew Wilson for Graduating...</a>
-                            <p>We are pleased to announce that after only 8 months spent on our Netmatters Scion Coalition Scheme (...</p>
-                            <a class="read_more_button" href="#">Read More</a>                      
-                            <div class="card_author">
-                                <img class="card_author_logo" src="Images/Netmatters_Logo_Small.png" alt="Netmatters Logo">
-                                <div class="card_author_content">
-                                    <strong class="card_author_name">Posted by Netmatters Ltd</strong>
-                                    <p class="card_author_date">14th May 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php include 'includes/news_card.inc.php'; ?>
                 </div>
             </div>
             <div class="logo_container push-this">
@@ -315,80 +230,14 @@
                     </div>
                 </div>
             </div>
-        <footer>
-            <script type="text/javascript" src="Plugins/pushy-1.3.0/js/pushy.min.js"></script> <!-- KEEP THIS -->
-            <div class="about_links push-this"> <!-- About links -->
-                <div class="about_links_container"> <!-- Width Container-->
-                    <!-- <div class="about_links_flex"> -->
-                        <div class="about_item">
-                            <h5 class="header">Contact Us</h5>
-                            <p>11 Penfold Drive<br>Wymondham<br>Norfolk<br>NR18 OWZ<br></p>
-                            <p>Tel: <a href="#">01803 704020</a></p>
-                            <p>Email: <a href="#" class="no_change">support@netmatters.com</a></p>
-                        </div>
-                        <div class="about_item">
-                            <h5 class="header">About Netmatters</h5>
-                            <a href="#">news</a><br>
-                            <a href="#">our careers</a><br>
-                            <a href="#">our team</a><br>
-                            <a href="#">our office tour</a><br>
-                            <a href="#">privacy policy</a><br>
-                            <a href="#">cookie policy</a><br>
-                            <a href="#">terms & conditions</a><br>
-                            <a href="#">UK domains</a>
-                        </div>
-                        <div class="about_item">
-                            <h5 class="header">Website</h5>
-                            <a>sitemap</a><br>
-                            <p>&copy; Copyright Netmatters Ltd. 2020<br>All rights reserved</p>
-                        </div>
-                        <div class="about_item">
-                            <h5 class="header">social media</h5>
-                            <div class="social_links">
-                                <div>
-                                    <a class="facebook"  href="#"><span><i class="fa fa-facebook-f fa-2x"></i></span></a>
-                                </div>
-                                <div>
-                                    <a class="twitter" href="#"><span><i class="fa fa-twitter fa-2x"></i></span></a>
-                                </div>
-                                <div>
-                                    <a class="linkedin" href="#"><span><i class="fa fa-linkedin fa-2x"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- </div> -->
-                </div>
-            </div>
-            <div class="sponsor push-this">
-                <div class="sponsor_container">
-                    <div class="sponsor_box google_box">
-                        <img src="Images/Google_Partner.png" class="size_google" alt="Google Partner Logo">
-                    </div>
-                    <div class="sponsor_box microsoft_box">
-                        <img src="Images/Microsoft_Silver_Partner.jpeg" class="size_microsoft" alt="Microsoft Silver Partner Logo">
-                    </div>
-                    <div class="sponsor_box future_box">
-                        <img class="size_future_50 coloured future" src="Images/Future_50.jpg" alt="Future 50 Logo">
-                        <img class="size_future_50 greyscale future" src="Images/Future_50_Greyscale" alt="Future 50 Logo">
-                    </div>
-                    <div class="sponsor_box QMS_box">
-                        <img class="size_QMS coloured" src="Images/QMS.jpg" alt="QMS Logo">
-                        <img class="size_QMS greyscale" src="Images/QMS_Greyscale.png" alt="QMS Logo">
-                    </div>
-                    <div class="sponsor_box norfolk_box">
-                        <img src="Images/Norfolk_Carbon_Charter.jpg" class="size_norfolk coloured" alt="Norfolk Carbon Charter Logo">
-                        <img src="Images/Norfolk_Carbon_Charter_Greyscale" class="size_norfolk greyscale" alt="Norfolk Carbon Charter Logo">
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- <script type="text/javascript" src="Plugins/pushy-1.3.0/js/pushy.js"></script> -->
+
+        <?php include 'footer.php'; ?>
         <script type="text/javascript" src="Plugins/slick-1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="JS/slick_slideshow.js"></script>
         <script type="text/javascript" src="JS/sticky_header.js"></script>
-        <!-- <script type="text/javascript" src="JS/burger_button.js"></script> -->
         <script type="text/javascript" src="JS/side_menu.js"></script>
         <script type="text/javascript" src="JS/search_bar.js"></script>
         <script src="JS/cookie_modal.js"></script>
+        <script src="JS/news_card_trim.js"></script>
     </body>
 </html>
