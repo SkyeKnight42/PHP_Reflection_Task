@@ -196,7 +196,7 @@
         </div>
     </div>
 
-    <div class="menu_overlay" id="menu_overlay"></div>
+    <div class="menu_overlay deactive" id="menu_overlay"></div>
 
     <div class="modal_container" id="modal_container">
         <div class="modal_title_container">

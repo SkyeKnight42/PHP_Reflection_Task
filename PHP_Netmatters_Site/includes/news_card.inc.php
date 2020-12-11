@@ -1,6 +1,9 @@
 <?php
     // echo "Hello World";
+    include_once 'database_connection.inc.php';
 
+    $conn = OpenConnection();
+    
     $sql = "SELECT * FROM posts";
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);

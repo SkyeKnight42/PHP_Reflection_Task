@@ -540,10 +540,6 @@
   bottom: 299px;
 }
 
-.deactive {
-  display: none;
-}
-
 @media (min-width: 750px) {
   .image_slideshow {
     padding-top: 110px;

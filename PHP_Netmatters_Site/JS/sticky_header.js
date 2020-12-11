@@ -60,18 +60,21 @@ if (document.body.clientWidth < 750) {
 }
 
 let scrollHeight = 0
-window.addEventListener("scroll", () => {
-	if (window.scrollY >header_Height) {
-		if (window.scrollY < scrollHeight) {
+window.addEventListener("scroll", function() {
+	// console.log("--")
+	console.log(document.documentElement.scrollTop)
+	if (document.documentElement.scrollTop >= header_Height) {
+		console.log("scrollHeight: " + scrollHeight)
+		if (document.documentElement.scrollTop < scrollHeight) {
 			headerElement.classList.remove("sticky_header")
 
 		} else {
 			headerElement.classList.add("sticky_header")
 		}
 		
-		scrollHeight = window.scrollY
+		scrollHeight = document.documentElement.scrollTop
 	}
-	if (window.scrollY < header_Height) {
+	if (document.documentElement.scrollTop <= header_Height) {
 		headerElement.classList.remove("sticky_header")
 	}
 })
