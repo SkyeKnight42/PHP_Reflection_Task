@@ -17,14 +17,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick-theme.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick-theme.css"/> -->
     </head>
     <body>
         <?php include 'header.php'; ?>
 
             <div class="image_slideshow office push-this">
-                <div> <!-- Slide Image 1 -->
+                <div class="slide"> <!-- Slide Image 1 -->
                     <img src="Images/Web_Design.jpg"  alt="Office Image">
                     <div class="image_text_boundaries">
                         <div class="image_text">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div> <!-- Slide Image 2 -->
+                <div class="slide"> <!-- Slide Image 2 -->
                     <img src="Images/IT_Support.jpg"  alt="Office Image">
                     <div class="image_text_boundaries">
                         <div class="image_text">
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div> <!-- Slide Image 3 -->
+                <div class="slide"> <!-- Slide Image 3 -->
                     <img src="Images/Telecoms.jpg"  alt="Office Image">
                     <div class="image_text_boundaries">
                         <div class="image_text">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div> <!-- Slide Image 4 -->
+                <div class="slide"> <!-- Slide Image 4 -->
                     <img src="Images/Bespoke_Software.jpg"  alt="Office Image">
                     <div class="image_text_boundaries">
                         <div class="image_text">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div> <!-- Slide Image 5 -->
+                <div class="slide"> <!-- Slide Image 5 -->
                     <img src="Images/Digital_Marketing.jpg"  alt="Office Image">
                     <div class="image_text_boundaries">
                         <div class="image_text">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div> <!-- Slide Image 6 -->
+                <div class="slide"> <!-- Slide Image 6 -->
                     <img src="Images/Cyber_Security.jpg"  alt="Office Image">
                     <div class="image_text_boundaries">
                         <div class="image_text">
@@ -232,8 +232,9 @@
             </div>
 
         <?php include 'footer.php'; ?>
-        <script type="text/javascript" src="Plugins/slick-1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="JS/slick_slideshow.js"></script>
+        <!-- <script type="text/javascript" src="Plugins/slick-1.8.1/slick/slick.min.js"></script> -->
+        <!-- <script type="text/javascript" src="JS/slick_slideshow.js"></script> -->
+        <script type="text/javascript" src="JS/slideshow.js"></script>
         <script type="text/javascript" src="JS/sticky_header.js"></script>
         <script type="text/javascript" src="JS/side_menu.js"></script>
         <script type="text/javascript" src="JS/search_bar.js"></script>

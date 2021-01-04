@@ -5,6 +5,15 @@
 }
 
 .image_slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding-top: 168px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

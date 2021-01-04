@@ -6,6 +6,9 @@
 }
 
 .image_slideshow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding-top: 168px;
     justify-content: center;
     // position: relative;
@@ -13,6 +16,9 @@
     border-top: solid 1px grey;
     overflow: hidden;
 
+    .hide_slide {
+
+    }
     .image_text_boundaries {
         color: white;
         position: relative;
