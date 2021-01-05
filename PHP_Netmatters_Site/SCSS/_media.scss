@@ -2,18 +2,26 @@
 @media (min-width: 750px) {  
 
     .image_slideshow {
+        height: 958px;
+        // height: 978px;
         padding-top: 110px;
 
-        .image_text_boundaries {
+        .slide {
+            max-height: 848px;
+            
+            img {
+                height: 848px;
+            }
 
-            margin-left: auto;
-            margin-right: auto;
+            .image_text_boundaries {
+                padding-left: calc(((100vw - 18px) - 750px)/2);
+    
+                .image_text {
 
-            .image_text {
-                margin-top: 300px;
-                .sub_text {
-                    width: 70%;
-                    margin: 35px auto;
+                    .sub_text {
+                        width: 70%;
+                        margin: 35px auto;
+                    }
                 }
             }
         }
@@ -92,22 +100,27 @@
 
     .image_slideshow {
         padding-top: 210px;
+        height: 968px;
 
-        .image_text_boundaries {
+        .slide {
 
-            .image_text {
-                width: 60%;
-                text-align: left;
-                
-                .sub_text {
-                    margin: 35px 0;
-                }
+            .image_text_boundaries {
+                padding-left: calc(((100vw - 18px) - 970px)/2);
 
-                a {
-                    margin: 0;
+                .image_text {
+                    text-align: left;
+                    
+                    .sub_text {
+                        margin: 35px 0;
+                    }
+    
+                    a {
+                        margin: 0;
+                    }
                 }
             }
         }
+
     }
 
     .card_container {
@@ -183,6 +196,15 @@
 // Happens when the viewport is 1260 pixels or wider
 @media (min-width: 1260px) {
 
+    .image_slideshow {
+
+        .slide {
+
+            .image_text_boundaries {
+                padding-left: calc(((100vw - 18px) - 1200px)/2);
+            }
+        }
+    }
 
     .card_container {
         .card_width_container {

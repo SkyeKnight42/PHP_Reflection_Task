@@ -5,15 +5,17 @@
 }
 
 .image_slideshow {
+  height: 926px;
+  width: calc(100vw - 18px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   padding-top: 168px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -22,55 +24,49 @@
   overflow: hidden;
 }
 
-.image_slideshow .image_text_boundaries {
-  color: white;
-  position: relative;
-  text-align: center;
+.image_slideshow .slide {
+  display: block;
+  width: calc(100% - 18px);
+  height: auto;
+  max-height: 758px;
 }
 
-@media (min-width: 750px) {
-  .image_slideshow .image_text_boundaries {
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 975px) {
-  .image_slideshow .image_text_boundaries {
-    width: 975px;
-  }
-}
-
-@media (min-width: 1260px) {
-  .image_slideshow .image_text_boundaries {
-    width: 1200px;
-  }
-}
-
-.image_slideshow .image_text_boundaries .image_text {
-  margin-top: 250px;
-  width: 100%;
-  top: -758px;
+.image_slideshow .slide img {
+  width: calc(100vw - 18px);
   height: 758px;
-  position: absolute;
 }
 
-.image_slideshow .image_text_boundaries .image_text .heading {
+.image_slideshow .slide .image_text_boundaries {
+  width: calc(100vw - 18px);
+  color: white;
+  position: absolute;
+  top: 0px;
+  padding-top: 120px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, rgba(0, 0, 0, 0.1)), to(black));
+  background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.1) 50%, black 100%);
+}
+
+.image_slideshow .slide .image_text_boundaries .image_text {
+  height: 758px;
+  padding-top: 150px;
+}
+
+.image_slideshow .slide .image_text_boundaries .image_text .heading {
   font-size: 48px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 48px;
 }
 
-.image_slideshow .image_text_boundaries .image_text .sub_text {
+.image_slideshow .slide .image_text_boundaries .image_text .sub_text {
   font-size: 20px;
   letter-spacing: .4px;
   line-height: 36px;
   margin: 35px 0;
 }
 
-.image_slideshow .image_text_boundaries .image_text a {
+.image_slideshow .slide .image_text_boundaries .image_text a {
   display: block;
   border: none;
   padding: 5px 20px;
@@ -85,14 +81,14 @@
   margin: 0 auto;
 }
 
-.image_slideshow .image_text_boundaries .image_text a .fa {
+.image_slideshow .slide .image_text_boundaries .image_text a .fa {
   width: 20px;
   height: 50px;
   margin-left: 6px;
   margin-right: -4px;
 }
 
-.image_slideshow .image_text_boundaries .image_text a:hover {
+.image_slideshow .slide .image_text_boundaries .image_text a:hover {
   text-decoration: none;
 }
 
@@ -551,16 +547,19 @@
 
 @media (min-width: 750px) {
   .image_slideshow {
+    height: 958px;
     padding-top: 110px;
   }
-  .image_slideshow .image_text_boundaries {
-    margin-left: auto;
-    margin-right: auto;
+  .image_slideshow .slide {
+    max-height: 848px;
   }
-  .image_slideshow .image_text_boundaries .image_text {
-    margin-top: 300px;
+  .image_slideshow .slide img {
+    height: 848px;
   }
-  .image_slideshow .image_text_boundaries .image_text .sub_text {
+  .image_slideshow .slide .image_text_boundaries {
+    padding-left: calc(((100vw - 18px) - 750px)/2);
+  }
+  .image_slideshow .slide .image_text_boundaries .image_text .sub_text {
     width: 70%;
     margin: 35px auto;
   }
@@ -626,15 +625,18 @@
   }
   .image_slideshow {
     padding-top: 210px;
+    height: 968px;
   }
-  .image_slideshow .image_text_boundaries .image_text {
-    width: 60%;
+  .image_slideshow .slide .image_text_boundaries {
+    padding-left: calc(((100vw - 18px) - 970px)/2);
+  }
+  .image_slideshow .slide .image_text_boundaries .image_text {
     text-align: left;
   }
-  .image_slideshow .image_text_boundaries .image_text .sub_text {
+  .image_slideshow .slide .image_text_boundaries .image_text .sub_text {
     margin: 35px 0;
   }
-  .image_slideshow .image_text_boundaries .image_text a {
+  .image_slideshow .slide .image_text_boundaries .image_text a {
     margin: 0;
   }
   .card_container .card_width_container {
@@ -693,6 +695,9 @@
 }
 
 @media (min-width: 1260px) {
+  .image_slideshow .slide .image_text_boundaries {
+    padding-left: calc(((100vw - 18px) - 1200px)/2);
+  }
   .card_container .card_width_container {
     width: 1200px;
   }

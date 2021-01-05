@@ -17,8 +17,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick-theme.css"/> -->
+        <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="Plugins/slick-1.8.1/slick/slick-theme.css"/>
     </head>
     <body>
         <?php include 'header.php'; ?>
@@ -232,9 +232,8 @@
             </div>
 
         <?php include 'footer.php'; ?>
-        <!-- <script type="text/javascript" src="Plugins/slick-1.8.1/slick/slick.min.js"></script> -->
-        <!-- <script type="text/javascript" src="JS/slick_slideshow.js"></script> -->
-        <script type="text/javascript" src="JS/slideshow.js"></script>
+        <script type="text/javascript" src="Plugins/slick-1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="JS/slick_slideshow.js"></script>
         <script type="text/javascript" src="JS/sticky_header.js"></script>
         <script type="text/javascript" src="JS/side_menu.js"></script>
         <script type="text/javascript" src="JS/search_bar.js"></script>
