@@ -5,6 +5,11 @@
     transform: translateY(-168px)
 }
 
+.fixed_position {
+    height: 100vw;
+    overflow: hidden;
+}
+
 header {
     transition: all .5s ease-in-out;
     position: fixed;

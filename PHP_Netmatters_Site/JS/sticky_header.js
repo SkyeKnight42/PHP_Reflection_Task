@@ -21,7 +21,8 @@ if (document.body.clientWidth < 750) {
 let scrollHeight = 0
 
 window.addEventListener("scroll", function() {
-
+	// console.log(document.documentElement.scrollTop)
+	// console.log("scrolling")
 	if (document.documentElement.scrollTop >= header_Height) {
 
 		if (document.documentElement.scrollTop < scrollHeight) {
@@ -33,7 +34,8 @@ window.addEventListener("scroll", function() {
 		
 		scrollHeight = document.documentElement.scrollTop
 	}
-	if (document.documentElement.scrollTop <= header_Height) {
+	if (document.documentElement.scrollTop < header_Height) {
 		headerElement.classList.remove("sticky_header")
 	}
 })
+
