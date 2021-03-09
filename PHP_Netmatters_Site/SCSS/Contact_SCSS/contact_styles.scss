@@ -6,9 +6,6 @@
 
 }
 
-body {
-    // padding-top: 110px;
-}
 
 .contact_top {
     padding-top: 168px;
@@ -154,9 +151,10 @@ body {
                 width: 100%;
                 border-radius: 3px;
                 border: solid 1px lightgrey;
+                padding: 5px;
             }
 
-            #privacy {
+            #updates {
                 display: flex;
                 flex-direction: row;
                 margin: 25px 0;

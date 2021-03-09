@@ -5,12 +5,12 @@
     <div class="width_container push-this">
         <div class="header_box">
             <div class="logo_box">
-                <a href="#"><img src="Images/Logo.png" alt="Netmatters Logo"></a>
+                <a href="index.php" target="_self"><img src="Images/Logo.png" alt="Netmatters Logo"></a>
             </div>
             <div class="actions_container">
                 <div class="actions">
-                    <a class="btn-support" id="support_button" href="#" target="_blank"><span><i class="fa fa-mouse-pointer"></i></span>Support</a>
-                    <a class="btn-contact" id="contact_button" href="contact.php" target="_blank"><span><i class="fa fa-paper-plane-o"></i></span>Contact</a>
+                    <a class="btn-support" id="support_button" href="#"><span><i class="fa fa-mouse-pointer"></i></span>Support</a>
+                    <a class="btn-contact" id="contact_button" href="contact.php"><span><i class="fa fa-paper-plane-o"></i></span>Contact</a>
 
                     <div class="search_container" id="search_container">
                         <input id="search_box" type=text placeholder="Search...">
@@ -196,7 +196,7 @@
         </div>
     </div>
 
-    <div class="menu_overlay deactive" id="menu_overlay"></div>
+    <div class="menu_overlay" id="menu_overlay"></div>
 
     <div class="modal_container" id="modal_container">
         <div class="modal_title_container">

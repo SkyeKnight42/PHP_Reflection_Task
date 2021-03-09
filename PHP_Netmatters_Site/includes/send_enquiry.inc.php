@@ -6,6 +6,8 @@
 
     if (!$conn) {
         die("Error: Could not connect. " . mysqli_connect_error());
+    } else {
+        // echo '<script type="text/javascript" src="JS/test.js"></script>';
     }
 
     $namevalid = false;
@@ -18,11 +20,11 @@
 
         session_start();
 
-        $name = $_POST['name'];
-        $email = $_POST['email_address'];
-        $phone = $_POST['phone_number'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
+        // $name = $_POST['name'];
+        // $email = $_POST['email_address'];
+        // $phone = $_POST['phone_number'];
+        // $subject = $_POST['subject'];
+        // $message = $_POST['message'];
 
         if (preg_match('/^[a-z .\-]+$/i', $_POST['name']) && strlen($_POST["name"]) > 0) {
             $name = $_POST["name"];
@@ -69,23 +71,43 @@
             $messagevalid = false;
         }
 
-        if (isset($_POST['submit']) && isset($_POST['terms_conditions'])) {
+        if (isset($_POST['news_updates']) && $_POST['news_updates'] == 'true') {
+            $news_update = true;
+        } else {
+            $news_update = false;
+        }
+
+        if (isset($_POST['submit'])) {
 
             if ($namevalid && $emailvalid && $phonevalid && $subjectvalid && $messagevalid) {
+
+                echo '<script type="text/javascript" src="JS/validate_contact_form.js">
+                console.log("test")
+                ClearForm()</script>';
 
                 $namevalue = htmlspecialchars($name);
                 $emailvalue = htmlspecialchars($email);
                 $phonevalue = htmlspecialchars($phone);
                 $subjectvalue = htmlspecialchars($subject);
                 $messagevalue = htmlspecialchars($message);
-                $sql = "INSERT into contact_enquiry (name, email, telephone, subject, message) VALUES ('$namevalue', '$emailvalue', '$phonevalue', '$subjectvalue', '$messagevalue');";
+                $news_update_value = $news_update;
+
+                $sql = "INSERT into contact_enquiry (name, email, telephone, subject, message, news_updates) VALUES ('$namevalue', '$emailvalue', '$phonevalue', '$subjectvalue', '$messagevalue', '$news_update_value');";
 
                 $pop_up = 'show_pop_up';
                 $_SESSION['contact_session'] = $pop_up;
 
                 mysqli_query($conn, $sql);
+
+                // Reset variables
+                $name = '';
+                $email = '';
+                $phone = '';
+                $subject = '';
+                $message = '';
+                $news_update = '';
+                
             } 
         }
-
     }
 ?>

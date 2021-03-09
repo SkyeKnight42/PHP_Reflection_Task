@@ -6,9 +6,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Website Title</title>
+    <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="Images/tab_icon.ico" type="image/ico" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link rel="stylesheet" href="SCSS/footer.css">
         <link rel="stylesheet" href="SCSS/header.css">
@@ -39,11 +40,11 @@
             <div class="contact_info">
                 <div class="infomation">
                     <p class="text">Call us on:</p>
-                    <a class="link" href="#" target="_blank">01603 70 40 20</a>
+                    <a class="link" href="">01603 70 40 20</a>
                     <p class="text">Email us on:</p>
-                    <a class="link" href="#" target="_blank">sales@netmatters.com</a>
+                    <a class="link" href="">sales@netmatters.com</a>
                     <p class="text">Call us on our Gorleston branch on:</p>
-                    <a class="link" href="#" target="_blank">01493 603204</a>
+                    <a class="link" href="">01493 603204</a>
                     <p class="text">Businesss hours:</p>
                     <p class="text">Monday - Friday 07:00 - 18:00</p>
                 </div>
@@ -107,9 +108,9 @@
                             echo $message;
                         }?></textarea><br>
                     </span>
-                    <span id="privacy">
-                        <input class="<?php echo $termsError?>" type="checkbox" name="terms_conditions" id="terms_conditions" value="accepted">
-                        <label class="privacy_text" for="terms">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data</label>
+                    <span id="updates">
+                        <input id="checkbox_input" type="checkbox" name="news_updates" value="true">
+                        <label class="privacy_text" for="news_updates">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data</label>
                     </span>
                     <button class="send_button" name="submit" id="contact_form_button">Send Inquiry</button>
                 </form>
@@ -158,7 +159,7 @@
         <script type="text/javascript" src="JS/side_menu.js"></script>
         <script type="text/javascript" src="JS/search_bar.js"></script>
         <script type="text/javascript" src="JS/cookie_modal.js"></script>
-        <script type="text/javascript" src="JS/validate_contact_form.js"></script>
+        <!-- <script type="text/javascript" src="JS/validate_contact_form.js"></script> -->
 
     </body>
 </html>

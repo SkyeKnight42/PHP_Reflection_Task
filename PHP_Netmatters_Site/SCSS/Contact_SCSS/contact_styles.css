@@ -165,9 +165,10 @@
   width: 100%;
   border-radius: 3px;
   border: solid 1px lightgrey;
+  padding: 5px;
 }
 
-.contact_form .form_privacy form #privacy {
+.contact_form .form_privacy form #updates {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +179,7 @@
   margin: 25px 0;
 }
 
-.contact_form .form_privacy form #privacy input {
+.contact_form .form_privacy form #updates input {
   height: 50px;
   width: 50px;
   -webkit-transform: scale(2);
@@ -186,7 +187,7 @@
   margin: 0 25px;
 }
 
-.contact_form .form_privacy form #privacy label a {
+.contact_form .form_privacy form #updates label a {
   display: inline-block;
   font-size: 16px;
   color: #333645;

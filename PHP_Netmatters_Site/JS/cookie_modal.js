@@ -1,5 +1,5 @@
 
-
+const documentBody = document.getElementsByTagName("body")
 
 const modalSettings = document.querySelector(".settings_button")
 const modalAccept = document.querySelector('.modal_accept_button')
@@ -9,41 +9,27 @@ const modalOverlay = document.getElementById("modal_overlay")
 // localStorage.setItem('cookie', 'false')
 
 window.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('cookie') == 'true') {
-        console.log("Cookie has already been accepted.")
-        disableModal()
 
-    } else if (localStorage.getItem('cookie') == null || 
-    localStorage.getItem('cookie') == 'false') {
-        console.log("Cookie has not been accepted.")
-        showModal()
+    window.scrollTo(0,0)
+
+    if (localStorage.getItem('cookie') == null || 
+        localStorage.getItem('cookie') == 'false') {
+
+        enableModal()
     }
 })
 
-function noScroll() {
-    window.scrollTo(0,0)
-}
+function enableModal() {
 
-function showModal() {
-
-    window.addEventListener('scroll', noScroll)
-}
-
-function disableModal() {
-
-    modalContainer.classList.add('deactive')
-    modalOverlay.classList.add('deactive')
-
-    window.removeEventListener('scroll', noScroll)
+    documentBody[0].classList.add("document_hidden")
+    modalContainer.classList.add('active')
+    modalOverlay.classList.add('active')
 }
 
 modalAccept.addEventListener('click', function() {
-
     localStorage.setItem('cookie', 'true')
-    disableModal()
+
+    documentBody[0].classList.remove("document_hidden")
+    modalContainer.classList.remove('active')
+    modalOverlay.classList.remove('active')
 })
-
-
-
-
-// on page load, load the cookie

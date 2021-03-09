@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.document_hidden {
+  overflow: hidden;
+}
+
 .image_slideshow {
   height: 926px;
   width: calc(100vw - 18px);
@@ -34,6 +38,9 @@
 .image_slideshow .slide img {
   width: calc(100vw - 18px);
   height: 758px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .image_slideshow .slide .image_text_boundaries {
@@ -183,7 +190,10 @@
 }
 
 .description_block .description_background {
-  background-image: url(../Images/Dark_Background.jpeg);
+  background-color: #333645;
+  background-image: url(../Images/branded.png);
+  background-position: 100% 0;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
@@ -374,7 +384,7 @@
   width: 100%;
   border: 1px solid lightgray;
   border-radius: 0px 0px 3px 3px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .latest_width .latest_column .news_card .card_content .news_title {
@@ -601,9 +611,6 @@
   .latest_width .latest_column .news_card {
     width: 345px;
     margin: 0 0;
-  }
-  .latest_width .latest_column .news_card {
-    width: 345px;
   }
   .latest_width .latest_column .news_card:nth-of-type(3) {
     display: none;

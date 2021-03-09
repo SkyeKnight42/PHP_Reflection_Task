@@ -1,5 +1,4 @@
 <?php
-    // echo "Hello World";
     include_once 'database_connection.inc.php';
 
     $conn = OpenConnection();
@@ -10,9 +9,7 @@
 
     if ($resultCheck > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-            // echo $row['title'] . "<br><br>";
-            // echo $row['description'] . "<br><br>";
-            // echo $row['post_date'] . "<br><br>";
+
 
             echo '<div class="news_card news_info_' . $row['type'] . '">';
                 echo '<div class="card_image_container">';

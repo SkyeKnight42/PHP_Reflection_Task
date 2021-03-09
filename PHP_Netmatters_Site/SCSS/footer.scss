@@ -38,6 +38,10 @@
             .social_links {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0;
+                margin-left: -15px;
+
                 div {
                     display: block;
                     width: 50%;

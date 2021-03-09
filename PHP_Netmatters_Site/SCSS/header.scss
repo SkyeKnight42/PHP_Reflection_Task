@@ -99,6 +99,7 @@ header {
                         justify-content: center;
                         &:hover {
                             background-color: #22242e;
+                            cursor: pointer;
                         }
                         .burger_line {
                             display: block;
@@ -269,6 +270,7 @@ header {
         display: block;
         background-color: $navigation-back;
         overflow: scroll;
+        overflow-x: hidden;
         
         .header_lists {
             width: 216px;
@@ -409,7 +411,7 @@ header {
     }
 
     .menu_overlay {
-        display: block;
+        display: none;
         z-index: 50;
         position: fixed;
         top: 0;
@@ -425,7 +427,7 @@ header {
     }
 
     .modal_container {
-        // display: none;
+        display: none;
         width: 600px;
         height: auto;
         position: fixed;
@@ -484,6 +486,7 @@ header {
     }
 
     .modal_overlay {
+        display: none;
         z-index: 45;
         position: fixed;
         top: 0;
@@ -493,8 +496,8 @@ header {
         background-color: rgba(0,0,0,.5);
     }
 
-    .deactive {
-        display: none;
+    .active {
+        display: block;
     }
 }
 
@@ -503,11 +506,13 @@ header {
 }
 
 .push-left {
-    transform: translateX(-275px);
+    // transform: translateX(-275px);
+    transform: translateX(-257px);
     transition: all .2s ease-in-out;
 
     @media (min-width: 975px) {
-        transform: translateX(-400px);
+        // transform: translateX(-400px);
+        transform: translateX(-382px);
     }
 }
 

@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+.document_hidden {
+    overflow: hidden;
+}
+
 .image_slideshow {
     height: 926px;
     width: calc(100vw - 18px);
@@ -25,6 +29,8 @@
         img {
             width: calc(100vw - 18px);
             height: 758px;
+            overflow: hidden;
+            object-fit:cover;
         }
 
         .image_text_boundaries {
@@ -159,7 +165,12 @@
     display: block;
     position: relative;
     .description_background { 
-        background-image: url(../Images/Dark_Background.jpeg);
+        // background-image: url(../Images/Dark_Background.jpeg);
+        // background: #333645, url(../Images/branded.png);
+        background-color: #333645;
+        background-image: url(../Images/branded.png);
+        background-position: 100% 0;
+        background-size: auto 100%;
         background-repeat: no-repeat;
         .description_width {
             width: 100%;
@@ -226,7 +237,6 @@
         margin: 0 auto;
         padding: 50px 0;
         display: flex;
-        // flex-direction: column;
         flex-wrap: wrap;
         width: auto;
 
@@ -235,6 +245,7 @@
             width: auto;
             height: 100%;
             margin: 0 25px;
+
             .card_image_container {
                 display: block;
                 width: 100%;
@@ -327,7 +338,7 @@
                 width: 100%;
                 border: 1px solid lightgray;
                 border-radius: 0px 0px 3px 3px;
-                margin-bottom: 50px;
+                margin-bottom: 25px;
                 
                 .news_title {
                     display: block;
@@ -475,12 +486,6 @@
         }
     }
 }
-
-// .deactive {
-//     display: none;
-// }
-// ^^^^^^^^^^^
-// Happens when the viewport is less than 750 pixels
 
 
 @import "_media.scss";

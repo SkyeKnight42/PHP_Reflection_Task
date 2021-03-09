@@ -702,6 +702,7 @@ header .width_container .header_box .actions_container .actions .btn-menu {
 
 header .width_container .header_box .actions_container .actions .btn-menu:hover {
   background-color: #22242e;
+  cursor: pointer;
 }
 
 header .width_container .header_box .actions_container .actions .btn-menu .burger_line {
@@ -890,6 +891,7 @@ header .side_menu {
   display: block;
   background-color: #333645;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 header .side_menu .header_lists {
@@ -1047,7 +1049,7 @@ header .side_menu .menu_lists_container .menu_header:hover {
 }
 
 header .menu_overlay {
-  display: block;
+  display: none;
   z-index: 50;
   position: fixed;
   top: 0;
@@ -1065,6 +1067,7 @@ header .side_menu_transform {
 }
 
 header .modal_container {
+  display: none;
   width: 600px;
   height: auto;
   position: fixed;
@@ -1134,6 +1137,7 @@ header .modal_container .modal_button_container .modal_accept_button {
 }
 
 header .modal_overlay {
+  display: none;
   z-index: 45;
   position: fixed;
   top: 0;
@@ -1143,8 +1147,8 @@ header .modal_overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-header .deactive {
-  display: none;
+header .active {
+  display: block;
 }
 
 .push-this {
@@ -1153,16 +1157,16 @@ header .deactive {
 }
 
 .push-left {
-  -webkit-transform: translateX(-275px);
-          transform: translateX(-275px);
+  -webkit-transform: translateX(-257px);
+          transform: translateX(-257px);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 @media (min-width: 975px) {
   .push-left {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-382px);
+            transform: translateX(-382px);
   }
 }
 

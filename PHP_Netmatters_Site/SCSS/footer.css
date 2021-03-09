@@ -52,6 +52,11 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin-left: -15px;
 }
 
 .about_links .about_links_container .about_item .social_links div {

@@ -5,9 +5,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Website Title</title>
+        <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="Images/tab_icon.ico" type="image/ico" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link rel="stylesheet" href="SCSS/input.css"> 
         <link rel="stylesheet" href="SCSS/pushy.css">
@@ -235,9 +236,9 @@
         <script type="text/javascript" src="Plugins/slick-1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="JS/slick_slideshow.js"></script>
         <script type="text/javascript" src="JS/sticky_header.js"></script>
+        <script src="JS/cookie_modal.js"></script>
         <script type="text/javascript" src="JS/side_menu.js"></script>
         <script type="text/javascript" src="JS/search_bar.js"></script>
-        <script src="JS/cookie_modal.js"></script>
         <script src="JS/news_card_trim.js"></script>
     </body>
 </html>
